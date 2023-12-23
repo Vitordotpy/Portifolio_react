@@ -6,17 +6,17 @@ import {  OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader';
 
 const Computers = ({isMobile}) => {
-  const model = useGLTF('public/employee/scene.gltf');
+  const model = useGLTF('public/rocket_planet/scene.gltf');
   return (
     <mesh>
       <hemisphereLight intensity={3}
       groundColor="black"/>
-      <pointLight intensity={0.7} position={[0,0,0.9]}/>
+      
       <primitive
       object={model.scene}
-      scale={1}
-      position={[0,-1.9,0]}
-      rotation={[0, isMobile?0.15:0.5, 0]}
+      scale={0.03}
+      //position={[0,-1.9,0]}
+      rotation={[0.2, isMobile?0.15:0.5, 0]}
       />
     </mesh>
   )
@@ -49,6 +49,7 @@ const ComputersCanvas = () =>{
         maxPolarAngle={Math.PI/2}
         minPolarAngle={Math.PI/2}
         enablePan={false}
+        autoRotate
         />
         <Computers isMobile={isMobile}/>
       </Suspense>
