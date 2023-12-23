@@ -6,6 +6,8 @@ import web from "./web.png";
 import to_source from "./github.png"; // modify later
 import menu from "./menu.svg";
 import close from "./close.svg";
+import ptbr from "./brasil.svg";
+import enus from "./usa.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -59,4 +61,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  ptbr,
+  enus
 };

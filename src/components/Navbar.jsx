@@ -5,6 +5,7 @@ import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
 
+import SwitchToggle from './Switch';
 
 const Navbar = () => {
 
@@ -25,6 +26,7 @@ const Navbar = () => {
             Vitor &nbsp;<span className="sm:block hidden">| Software Enginner</span>
           </p>
         </Link>
+        <SwitchToggle />
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
