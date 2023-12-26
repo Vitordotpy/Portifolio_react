@@ -6,7 +6,7 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader';
 
 const Rocket = ({ isMobile }) => {
-  const model = useGLTF('public/rocket_planet/scene.gltf');
+  const model = useGLTF('./rocket_planet/scene.gltf');
   return (
     <mesh>
       <hemisphereLight 
