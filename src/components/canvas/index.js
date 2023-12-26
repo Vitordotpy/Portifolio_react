@@ -1,4 +1,4 @@
-import BlackHoleCanvas from "./Earth";
+import BlackHoleCanvas from "./Blackhole";
 import RocketCanvas from "./Rocket";
 import StarsCanvas from "./Stars";
 
