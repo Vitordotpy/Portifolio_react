@@ -7,6 +7,8 @@ import { projects } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { fadeIn, textVariant } from '../utils/motion';
 import { to_source } from '../assets';
+import { useLanguage } from './context/LanguageContext';
+import { texts } from '../constants';
 
 const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
   return (
@@ -39,19 +41,21 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
 }
 
 const Works = () => {
+  const {language} = useLanguage();
+
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
-          My Work
+          {language? texts['myworkpt']:texts['myworken']}
         </p>
         <h2 className={styles.sectionHeadText}>
-          Projects.
+        {language? texts['myprojectspt']:texts['myprojectsen']}
         </h2>
       </motion.div>
       <div className='w-full flex'>
         <motion.p variants={fadeIn("", "", 0.1,1)} className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-          Todo.
+        {language? texts['myworktextpt']:texts['myworktexten']}
         </motion.p>
       </div>
 

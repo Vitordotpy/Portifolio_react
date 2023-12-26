@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -40,24 +36,7 @@ export const navLinks = [
   },
 ];
 
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
-];
+
 
 const technologies = [
   {
@@ -114,7 +93,61 @@ const technologies = [
   },
 ];
 
-const experiences = [
+const experiencesen = [
+  {
+    title: "React.js Developer",
+    company_name: "Starbucks",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "March 2020 - April 2021",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "React Native Developer",
+    company_name: "Tesla",
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "Jan 2021 - Feb 2022",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Web Developer",
+    company_name: "Shopify",
+    icon: shopify,
+    iconBg: "#383E56",
+    date: "Jan 2022 - Jan 2023",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full stack Developer",
+    company_name: "Meta",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+];
+const experiencespt = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
@@ -236,8 +269,8 @@ const projects = [
 ];
 
 const texts = {
-  hellopt: "Olá, me chamo Vitor",
-  helloen: "Hi, i'm Vitor",
+  hellopt: "Oi, sou ",
+  helloen: "Hi, i'm ",
   jobpt: "Um Engenheiro de Software",
   joben: "A Software Engineer",
   overviewheaderpt: "Introdução",
@@ -260,12 +293,12 @@ const texts = {
   que deixem um impacto duradouro.`,
   workheaderpt: "O que ja fiz até agora",
   workheaderen: "What i have done so far",
-  workexppt: "Experiência",
+  workexppt: "Experiência.",
   workexpen: "Work Experience.",
   myworkpt: "Meu Trabalho",
   myworken: "My Work",
   myworktextpt: "Todo",
-  myworktexten: "Tofo",
+  myworktexten: "Todo",
   contactheaderpt: "Entre em contato",
   contactheaderen: "Get in touch",
   contactpt: "Contato",
@@ -279,15 +312,23 @@ const texts = {
   contactsendpt: "Enviar",
   contactsenden: "Send",
   contactsendingpt: "Enviando...",
-  contactsendingen:"Sending...",
-  contactnamephpt:"Qual o seu nome ?",
+  contactsendingen: "Sending...",
+  contactnamephpt: "Qual o seu nome ?",
   contactnamephen: "What's your name ?",
   contactemailphpt: "Qual seu e-mail ?",
   contactemailphen: "What's your e-mail ?",
   contactmessagephpt: "Escreva aqui sua mensagem",
   contactmessagephen: "Write your message here.",
-  languagept:"Língua",
-  languageen:"Language"
+  languagept: "Língua",
+  languageen: "Language", 
+  scrolldownpt: "Role Abaixo", 
+  scrolldownen: "Scroll Down",
+  myprojectspt: "Projetos.",
+  myprojectsen:"Projects.",
+  aboutpt:"Sobre",
+  abouten:"About",
+  workpt: "Trabalho",
+  worken: "Work",
 };
 
-export { services, technologies, experiences, projects , texts};
+export { technologies, experiencesen, experiencespt, projects, texts };

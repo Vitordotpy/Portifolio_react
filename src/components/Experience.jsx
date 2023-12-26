@@ -5,9 +5,11 @@ import { motion } from 'framer-motion';
 import 'react-vertical-timeline-component/style.min.css';
 
 import { styles } from '../styles';
-import { experiences } from '../constants';
+import { experiencesen, experiencespt } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { textVariant } from '../utils/motion';
+import { useLanguage } from './context/LanguageContext';
+import { texts } from '../constants';
 
 const ExperienceCard = ({ experience }) => (<VerticalTimelineElement
   contentStyle={{ background: '#1d1836', color: '#fff' }}
@@ -40,19 +42,20 @@ const ExperienceCard = ({ experience }) => (<VerticalTimelineElement
 )
 
 const Experience = () => {
+  const {language} = useLanguage();
   return (
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
-          What i have done so far
+          {language?texts['workheaderpt']:texts['workheaderen']}
         </p>
         <h2 className={styles.sectionHeadText}>
-          Work Experience.
+        {language?texts['workexppt']:texts['workexpen']}
         </h2>
       </motion.div>
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
+          { (language ? experiencesen: experiencesen).map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
         </VerticalTimeline>

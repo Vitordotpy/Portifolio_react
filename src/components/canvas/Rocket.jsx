@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 
 import CanvasLoader from '../Loader';
 
-const Computers = ({ isMobile }) => {
+const Rocket = ({ isMobile }) => {
   const model = useGLTF('public/rocket_planet/scene.gltf');
   return (
     <mesh>
@@ -15,12 +15,13 @@ const Computers = ({ isMobile }) => {
       <primitive
         object={model.scene}
         scale={0.025}
+        rotation={[0, 0, 0.1]}
       />
     </mesh>
   )
 }
 
-const ComputersCanvas = () => {
+const RocketCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -49,11 +50,11 @@ const ComputersCanvas = () => {
           enablePan={false}
           autoRotate
         />
-        <Computers isMobile={isMobile} />
+        <Rocket isMobile={isMobile} />
       </Suspense>
       <Preload all />
     </Canvas>
   )
 }
 
-export default ComputersCanvas 
+export default RocketCanvas 

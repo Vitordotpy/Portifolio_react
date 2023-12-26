@@ -1,33 +1,27 @@
 import React from 'react'
-import { useState } from 'react';
 import { ptbr, enus } from '../assets';
 import { texts } from '../constants';
+import { useLanguage } from './context/LanguageContext';
 
 
 function Switch() {
-  const [toggle, setToggle] = useState(true);
+  const {language, toggleLanguage} = useLanguage();
+  
   const toggleClass = " transform translate-x-6";
   return (
-        <div className='grow flex-row justify-center'>
-      <div className="w-14 h-7 flex flex-col items-center">
+   
+      <div className="w-14 h-10 flex flex-col items-center ">
         <div
-          className="w-14 h-7 w-12 h-6 flex items-center bg-secondary rounded-full p-1 cursor-pointer"
-          onClick={() => {
-            setToggle(!toggle);
-          }}
+          className="w-14 h-7 flex items-center bg-secondary rounded-full p-1 cursor-pointer"
+          onClick={toggleLanguage}
         >
-          <div
-            className={
-              "bg-white md:w-6 md:h-6 h-6 w-6 rounded-full shadow-md transform duration-300 ease-in-out" +
-              (toggle ? null : toggleClass)
-            }
-          >
-            <img  src={toggle?ptbr:enus} className='object-fill'/>
-          </div>
+
+            <img  src={language?ptbr:enus} alt={language?"ptbr":"enus"} className={"h-[24.5px] w-[24.5px] rounded-full shadow-md transform duration-300 ease-in-out" + (language ? null : toggleClass)} />
+
         </div>
-        <span className='type-text text-secondary text-1rem font-medium relative m-2'>{toggle?texts['languagept']:texts['languageen']}</span>
+        <span className='type-text text-secondary text-1rem font-medium relative m-1 hidden md:block'>{language?texts['languagept']:texts['languageen']}</span>
       </div>
-      </div>
+      
     
 
   );
