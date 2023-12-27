@@ -26,6 +26,8 @@ import springboot from "./tech/springboot.png";
 import sql from "./tech/sql.png";
 import sqlite from "./tech/sqlite.png";
 import trello from "./tech/trello.png";
+import xml from "./tech/xml.png";
+
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -46,6 +48,8 @@ import siehp from "./company/siehp.png";
 
 import mtm from "./mtm.png";
 import voidmovies from "./voidmovies.png";
+import spacegame from "./spacegame.png";
+import ytdownloader from "./ytdownloader.png";
 
 export {
   logo,
@@ -88,9 +92,11 @@ export {
   sql,
   sqlite,
   trello,
+  xml,
   mserv,
   siehp,
   sincroneasy,
   mtm,
-  voidmovies
+  voidmovies,
+  spacegame,ytdownloader
 };

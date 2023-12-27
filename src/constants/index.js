@@ -37,7 +37,8 @@ import {
   siehp,
   sincroneasy,
   mtm,
-voidmovies
+voidmovies,
+spacegame,xml,ytdownloader
 } from "../assets";
 
 export const navLinks = [
@@ -150,6 +151,8 @@ const technologies = [
   icon: sqlite },
   { name: 'Trello', 
   icon: trello },
+  { name: 'XML', 
+  icon: xml },
 ];
 
 const experiencespt = [
@@ -167,7 +170,7 @@ const experiencespt = [
     ],
   },
   {
-    title: "Salesforce Developer",
+    title: "Desenvolvedor Salesforce",
     company_name: "MSERV TI",
     icon: mserv,
     iconBg: "#2A628F",
@@ -179,7 +182,7 @@ const experiencespt = [
     ],
   },
   {
-    title: "Backend and QA",
+    title: "Backend e QA",
     company_name: "SIEHP",
     icon: siehp,
     iconBg: "#AA20AC",
@@ -277,8 +280,21 @@ const projectsen = [
       }
     ],
     image: voidmovies,
-    source_code_link: "https://voidmovies.web.app/",
+    source_code_link: "https://moviesvoid.web.app/",
   },
+  {
+    name: "Space Game",
+    description: "A game based on Atari famous Asteroids, its a simple game made with Python and a library called Turtle that is used for drawing.",
+    tags: [{name:"Python", color: "green-text-gradient"}],
+    image: spacegame,
+    source_code_link: "https://github.com/Vitordotpy/SpaceGame/tree/main"
+  },{
+    name: "Youtube Downloader by Vitaça",
+    description: "A simple program in Python that can download audio and video of any video from youtube.com",
+    tags:[{name: "Python", color:"green-text-gradient"}],
+    image: ytdownloader,
+    source_code_link: "https://github.com/Vitordotpy/YoutubeDownloader"
+  }
 ];
 const projectspt = [
   {
@@ -326,10 +342,23 @@ const projectspt = [
     image: voidmovies,
     source_code_link: "https://voidmovies.web.app/",
   },
+  {
+    name: "Space Game",
+    description: "Um jogo baseado no famoso Asteroids da Atari, é um jogo simples feito com Python e uma biblioteca chamada Turtle que é usada para desenhar.",
+    tags: [{name:"Python", color: "green-text-gradient"}],
+    image: spacegame,
+    source_code_link: "https://github.com/Vitordotpy/SpaceGame/tree/main"
+  },{
+    name: "Youtube Downloader by Vitaça",
+    description: "Um simples programa feito em Python capaz de baixar audio e video de qualquer video do youtube.com",
+    tags:[{name: "Python", color:"green-text-gradient"}],
+    image: ytdownloader,
+    source_code_link: "https://github.com/Vitordotpy/YoutubeDownloader"
+  }
 ];
 
 const texts = {
-  hellopt: "Oi, sou ",
+  hellopt: "Olá, sou ",
   helloen: "Hi, i'm ",
   jobpt: "Engenheiro de Software",
   joben: "Software Engineer",
@@ -337,32 +366,43 @@ const texts = {
   overviewheaderen: "Introduction",
   overviewpt: "Visão Geral.",
   overviewen: "Overview.",
-  overtexten: `I thrive on challenges and constantly seek opportunities to
-  expand my skill set. My journey in the world of software
-  engineering has equipped me with a solid foundation in various
-  programming languages, software development methodologies,
-  and a knack for problem-solving. I am deeply committed to
-  delivering high-quality, scalable, and efficient software solutions
-  that leave a lasting impact.`,
-  overtextpt: `Olá, sou Vitor Moura, um engenheiro de software apaixonado
-   especializado em soluções para mobile, web e inteligência artificial. 
-   Ao longo da minha carreira dinâmica, destaco-me por contribuições 
-   significativas em projetos inovadores que impactam positivamente a 
-   vida das pessoas. Minha motivação reside na transformação de ideias 
-   em realidade, impulsionada pela crença no poder da tecnologia para 
-   resolver desafios complexos. Adoto uma filosofia de trabalho centrada 
-   na eficiência, qualidade e colaboração, buscando constantemente a 
-   excelência. Trabalho não apenas como uma carreira, mas como uma vocação,
-   comprometido em aplicar a tecnologia com ética e propósito para 
-   construir um futuro mais inovador e inclusivo. Vamos juntos construir o futuro.`,
+  overtexten: `I'm a software engineer studying Computer Science at the 
+  Federal University of Sergipe, i specialize in the development of 
+  mobile, desktop and web applications, and researcher in the field of 
+  artificial intelligence. 
+  I have team development experience using agile methodologies such as 
+  SCRUM and KANBAM, I have a focus on functionality and deadlines always looking
+  for quick and creative solutions to any type of problem, i have communication
+  and rhetorical skills for had sales experience. Over the years I have 
+  managed to accumulate a wide range of different types of knowledge, 
+  giving me the ability to deal with any work environment, below you can check out all 
+  my programming, modeling and development skills.`,
+  overtextpt: `Sou engenheiro de software graduando em Ciencia da Computação 
+  na Universidade Federal de Sergipe, sou especializado em desenvolvimento 
+  de aplicações mobile, web desktop e pesquisador da área de inteligencia 
+  artificial.
+  Possuo experiencia de desenvolvimento em equipe utilizando metodologias 
+  ágeis como SCRUM e KANBAM, possuo foco orientado a funcionalidade e prazo
+  de entrega, sempre procuro soluções rápidas e criativas para qualquer tipo 
+  de problema e possuo habilidades de comunicação e retórica por já possuir 
+  experiencia anterior com vendas. Ao decorrer dos anos eu consegui acumular
+  uma bagagem ampla de conhecimentos dos mais diversos tipo me proporcionando
+  habilidade de lidar com qualquer ambiente de trabalho, abaixo você pode
+  verificar todos os meus conhecimentos de programação, modelagem e 
+  desenvolvimento.
+ `,
   workheaderpt: "O que ja fiz até agora",
   workheaderen: "What i have done so far",
   workexppt: "Experiência.",
   workexpen: "Work Experience.",
   myworkpt: "Meu Trabalho",
   myworken: "My Work",
-  myworktextpt: "Todo",
-  myworktexten: "Todo",
+  myworktextpt: `Aqui está algumas amostras de projetos que já desenvolvi 
+  e participei ativamente como programador backend, frontend ou fullstack, 
+  espero que gostem do meu trabalho e utilizem eles como inspiração.`,
+  myworktexten: `Here are some samples of projects I've already developed
+   and actively participated as a backend, frontend or fullstack programmer, 
+   I hope you enjoy my work and use them as inspiration.`,
   contactheaderpt: "Entre em contato",
   contactheaderen: "Get in touch",
   contactpt: "Contato",
