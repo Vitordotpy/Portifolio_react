@@ -290,7 +290,7 @@ const projectsen = [
     tags: [
       {
         name: "Flutter",
-        color: "blue-text-gradient",
+        color: "cian-text-gradient",
       },
       {
         name: "Dart",
@@ -315,14 +315,14 @@ const projectsen = [
       },
       {
         name: "HTML",
-        color: "orange-text-gradient",
+        color: "yellow-text-gradient",
       },
       {
         name: "CSS",
         color: "blue-text-gradient",
       }, {
         name: "JavaScript",
-        color: "orange-text-gradient",
+        color: "yellow-text-gradient",
       }
     ],
     image: voidmovies,
@@ -356,7 +356,7 @@ const projectspt = [
     tags: [
       {
         name: "Flutter",
-        color: "blue-text-gradient",
+        color: "cian-text-gradient",
       },
       {
         name: "Dart",
@@ -381,14 +381,14 @@ const projectspt = [
       },
       {
         name: "HTML",
-        color: "orange-text-gradient",
+        color: "yellow-text-gradient",
       },
       {
         name: "CSS",
         color: "blue-text-gradient",
       }, {
         name: "JavaScript",
-        color: "orange-text-gradient",
+        color: "yellow-text-gradient",
       }
     ],
     image: voidmovies,
