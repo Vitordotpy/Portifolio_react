@@ -37,8 +37,8 @@ import {
   siehp,
   sincroneasy,
   mtm,
-voidmovies,
-spacegame,xml,ytdownloader
+  voidmovies,
+  spacegame, xml, ytdownloader, mktcodereader
 } from "../assets";
 
 export const navLinks = [
@@ -107,52 +107,98 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
-  { name: 'Android Studio',
-   icon: androidstudio },
-  { name: 'Apache Tomcat',
-   icon: apachetomcat },
-  { name: 'Apex',
-   icon: apex },
-  { name: 'AWS',
-   icon: aws },
-  { name: 'C',
-   icon: c },
-  { name: 'C++',
-   icon: c_plus_plus },
-  { name: 'Dart',
-   icon: dart },
-  { name: 'Filezilla',
-   icon: filezilla },
-  { name: 'Firebase',
-   icon: firebase },
-  { name: 'flutter',
-   icon: flutter },
-  { name: 'Insomnia',
-   icon: insomnia },
-  { name: 'Java',
-   icon: java_logo },
-  { name: 'Lua',
-   icon: lua },
-  { name: 'Miro',
-   icon: miro },
-  { name: 'PostgreSQL',
-   icon: postgresql },
-  { name: 'Postman',
-   icon: postman },
-  { name: 'Python',
-   icon: python },
-  { name: 'Salesforce',
-   icon: salesforce },
-  { name: 'SpringBoot',
-  icon: springboot },
-  { name: 'SQL', 
-  icon: sql },
-  { name: 'SQLite', 
-  icon: sqlite },
-  { name: 'Trello', 
-  icon: trello },
-  { name: 'XML', 
-  icon: xml },
+  {
+    name: 'Android Studio',
+    icon: androidstudio
+  },
+  {
+    name: 'Apache Tomcat',
+    icon: apachetomcat
+  },
+  {
+    name: 'Apex',
+    icon: apex
+  },
+  {
+    name: 'AWS',
+    icon: aws
+  },
+  {
+    name: 'C',
+    icon: c
+  },
+  {
+    name: 'C++',
+    icon: c_plus_plus
+  },
+  {
+    name: 'Dart',
+    icon: dart
+  },
+  {
+    name: 'Filezilla',
+    icon: filezilla
+  },
+  {
+    name: 'Firebase',
+    icon: firebase
+  },
+  {
+    name: 'flutter',
+    icon: flutter
+  },
+  {
+    name: 'Insomnia',
+    icon: insomnia
+  },
+  {
+    name: 'Java',
+    icon: java_logo
+  },
+  {
+    name: 'Lua',
+    icon: lua
+  },
+  {
+    name: 'Miro',
+    icon: miro
+  },
+  {
+    name: 'PostgreSQL',
+    icon: postgresql
+  },
+  {
+    name: 'Postman',
+    icon: postman
+  },
+  {
+    name: 'Python',
+    icon: python
+  },
+  {
+    name: 'Salesforce',
+    icon: salesforce
+  },
+  {
+    name: 'SpringBoot',
+    icon: springboot
+  },
+  {
+    name: 'SQL',
+    icon: sql
+  },
+  {
+    name: 'SQLite',
+    icon: sqlite
+  },
+  {
+    name: 'Trello',
+    icon: trello
+  },
+  {
+    name: 'XML',
+    icon: xml
+  },
 ];
 
 const experiencespt = [
@@ -190,7 +236,7 @@ const experiencespt = [
     points: [
       "Desenvolver e manter aplicações web utilizando React.js, Next.js e outras tecnologias relacionadas.",
       "Colaborar com equipas multifuncionais, incluindo designers, gestores de produto e outros programadores, para criar produtos de alta qualidade.",
-      "Implementar um design reativo e garantir a compatibilidade entre browsers.",       
+      "Implementar um design reativo e garantir a compatibilidade entre browsers.",
       "Participar em testes e revisões de código como QA.",
     ],
   },
@@ -243,17 +289,17 @@ const projectsen = [
       "Mobile application that allows players to trade items through an interactive catalog and chat between Digimon Masters Online players.",
     tags: [
       {
-        name: "flutter",
+        name: "Flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "dart",
+        name: "Dart",
         color: "blue-text-gradient",
-      },{
-        name: "firebase",
+      }, {
+        name: "Firebase",
         color: "orange-text-gradient"
       }
-,
+      ,
     ],
     image: mtm,
     source_code_link: "https://play.google.com/store/apps/details?id=com.void_tech.masters_trade_market",
@@ -264,18 +310,18 @@ const projectsen = [
       "Web application that allows users to view and give their opinions on today's top films.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "html",
+        name: "HTML",
         color: "orange-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
         color: "blue-text-gradient",
-      },{
-        name: "javascript",
+      }, {
+        name: "JavaScript",
         color: "orange-text-gradient",
       }
     ],
@@ -285,15 +331,21 @@ const projectsen = [
   {
     name: "Space Game",
     description: "A game based on Atari famous Asteroids, its a simple game made with Python and a library called Turtle that is used for drawing.",
-    tags: [{name:"Python", color: "green-text-gradient"}],
+    tags: [{ name: "Python", color: "green-text-gradient" }],
     image: spacegame,
     source_code_link: "https://github.com/Vitordotpy/SpaceGame/tree/main"
-  },{
+  }, {
     name: "Youtube Downloader by Vitaça",
     description: "A simple program in Python that can download audio and video of any video from youtube.com",
-    tags:[{name: "Python", color:"green-text-gradient"}],
+    tags: [{ name: "Python", color: "green-text-gradient" }],
     image: ytdownloader,
     source_code_link: "https://github.com/Vitordotpy/YoutubeDownloader"
+  }, {
+    name: "Market Code Reader",
+    description: "Desktop application developed in groups during the Object-Oriented Programming course, structured in Java, JavaFX on the front and SQLite for the database, in short it works like a market cashier.",
+    tags: [{ name: "Java", color: "red-text-gradient" }, { name: "JavaFX", color: "orange-text-gradient" }, { name: "SQLite", color: "blue-text-gradient" }],
+    image: mktcodereader,
+    source_code_link: 'https://github.com/Vitordotpy/MarketCodeReader?tab=readme-ov-file',
   }
 ];
 const projectspt = [
@@ -303,17 +355,17 @@ const projectspt = [
       "Aplicação móvel que permite que jogadores possam realizar trocas de itens através de um catálogo e chat interativos entre jogadores de Digimon Masters Online.",
     tags: [
       {
-        name: "flutter",
+        name: "Flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "dart",
+        name: "Dart",
         color: "blue-text-gradient",
-      },{
-        name: "firebase",
+      }, {
+        name: "Firebase",
         color: "orange-text-gradient"
       }
-,
+      ,
     ],
     image: mtm,
     source_code_link: "https://play.google.com/store/apps/details?id=com.void_tech.masters_trade_market",
@@ -324,18 +376,18 @@ const projectspt = [
       "Aplicação web que permite o usuário visualizar e opinar sobre os principais filmes da atualidade.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "html",
+        name: "HTML",
         color: "orange-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
         color: "blue-text-gradient",
-      },{
-        name: "javascript",
+      }, {
+        name: "JavaScript",
         color: "orange-text-gradient",
       }
     ],
@@ -345,15 +397,23 @@ const projectspt = [
   {
     name: "Space Game",
     description: "Um jogo baseado no famoso Asteroids da Atari, é um jogo simples feito com Python e uma biblioteca chamada Turtle que é usada para desenhar.",
-    tags: [{name:"Python", color: "green-text-gradient"}],
+    tags: [{ name: "Python", color: "green-text-gradient" }],
     image: spacegame,
     source_code_link: "https://github.com/Vitordotpy/SpaceGame/tree/main"
-  },{
+  },
+  {
     name: "Youtube Downloader by Vitaça",
     description: "Um simples programa feito em Python capaz de baixar audio e video de qualquer video do youtube.com",
-    tags:[{name: "Python", color:"green-text-gradient"}],
+    tags: [{ name: "Python", color: "green-text-gradient" }],
     image: ytdownloader,
     source_code_link: "https://github.com/Vitordotpy/YoutubeDownloader"
+  },
+  {
+    name: "Market Code Reader",
+    description: "Aplicação Desktop desenvolvida em grupo durante a disciplina de Programação Orientada a Objetos, estruturada em Java, JavaFX no front e SQLite para o banco de dados, em resumo funciona como um caixa de mercado.",
+    tags: [{ name: "Java", color: "red-text-gradient" }, { name: "JavaFX", color: "orange-text-gradient" }, { name: "SQLite", color: "blue-text-gradient" }],
+    image: mktcodereader,
+    source_code_link: 'https://github.com/Vitordotpy/MarketCodeReader?tab=readme-ov-file',
   }
 ];
 
