@@ -5,16 +5,15 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { technologies } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
-import { SectionWrapper } from '../hoc';
 import { useLanguage } from './context/LanguageContext';
 import { texts } from '../constants';
 
 //Card de overview
 const TechCard = ({ index, name, icon }) => {
-  return (<Tilt className=" w-[150px]" options={{ max: 5, scale: 1.05, speed: 450 }}>
+  return (<Tilt className=" w-[130px]" options={{ max: 5, scale: 1.05, speed: 450 }}>
     <motion.div variants={fadeIn("right", "spring", 0.25 * index, 0.50)} className='w-full red-pink-gradient p-[1px] rounded-[20px] shadow-card'>
       <div
-        className='bg-tertiary rounded-[20px] py-5 px-5 min-h-[150px] flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[20px] py-5 px-5 min-h-[130px] flex justify-evenly items-center flex-col'
         >
         <img src={icon} alt={name} className='w-16 h-16 object-contain' />
         <h3 className='text-white text-[20px] font-bold text-center' >{name}</h3>
