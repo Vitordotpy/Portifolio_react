@@ -11,13 +11,13 @@ import { texts } from '../constants';
 
 //Card de overview
 const TechCard = ({ index, name, icon }) => {
-  return (<Tilt className="xs:w-[150px] w-full" options={{ max: 5, scale: 1.05, speed: 450 }}>
+  return (<Tilt className=" w-[150px]" options={{ max: 5, scale: 1.05, speed: 450 }}>
     <motion.div variants={fadeIn("right", "spring", 0.25 * index, 0.50)} className='w-full red-pink-gradient p-[1px] rounded-[20px] shadow-card'>
       <div
-        className='bg-tertiary rounded-[1.25rem] py-5 px12 min-h-[150px] flex justify-evenly items-center flex-col'
+        className='bg-tertiary rounded-[20px] py-5 px-5 min-h-[150px] flex justify-evenly items-center flex-col'
         >
         <img src={icon} alt={name} className='w-16 h-16 object-contain' />
-        <h3 className='text-white text-[1.25rem] font-bold text-center' >{name}</h3>
+        <h3 className='text-white text-[20px] font-bold text-center' >{name}</h3>
       </div>
     </motion.div>
   </Tilt>)
@@ -27,23 +27,26 @@ const About = () => {
   const {language} = useLanguage();
   return (
     <>
+      <div className={`${styles.padding} max-w-7xl mx-auto relative z-0`}>
+      <span className='hash-span' id={'about'}>&nbsp;</span>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>{language?texts['overviewheaderpt']:texts['overviewheaderen']}</p>
         <h2 className={styles.sectionHeadText}>{language?texts['overviewpt']:texts['overviewen']}</h2>
       </motion.div>
 
-      <motion.div variants={fadeIn("", "", 0.1, 1)}
+      <motion.p variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px]
       max-w-3xl leading-[30px]">
         {language?texts['overtextpt']:texts['overtexten']}
-      </motion.div>
+      </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
         {technologies.map((tech, index) => (<TechCard key={tech.name} index={index} {...tech} />))}
 
       </div>
+      </div>
     </>
   )
 }
 
-export default SectionWrapper(About, "about");
+export default About;
