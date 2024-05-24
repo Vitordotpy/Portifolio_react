@@ -493,6 +493,10 @@ const texts = {
   abouten: "About",
   workpt: "Trabalho",
   worken: "Work",
+  techsheaderpt: "Tudo que aprendi até agora",
+  techsheaderen: "Everything i've learned so far",
+  techspt: "Tecnologias",
+  techsen: "Technologies",
 };
 
 export { technologies, experiencesen, experiencespt, projectspt, projectsen, texts };

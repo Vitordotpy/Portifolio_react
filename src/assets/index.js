@@ -52,10 +52,9 @@ import spacegame from "./spacegame.png";
 import ytdownloader from "./ytdownloader.png";
 import mktcodereader from "./marketcodereader.png";
 
-import gif from "./giphy.gif";
 
 export {
-  gif,
+  
   logo,
   to_source,
   menu,
