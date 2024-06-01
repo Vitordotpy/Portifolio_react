@@ -52,9 +52,11 @@ import spacegame from "./spacegame.png";
 import ytdownloader from "./ytdownloader.png";
 import mktcodereader from "./marketcodereader.png";
 
+import perfil from "./perfil.png";
+
 
 export {
-  
+  perfil,
   logo,
   to_source,
   menu,

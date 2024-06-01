@@ -11,7 +11,7 @@ import { texts } from '../constants';
 //Card de overview
 const TechCard = ({ index, name, icon }) => {
     return (<Tilt className=" w-[130px]" options={{ max: 5, scale: 1.05, speed: 450 }}>
-        <motion.div variants={fadeIn("right", "spring", 0.25 * index, 0.50)} className='w-full red-pink-gradient p-[1px] rounded-[20px] shadow-card'>
+        <motion.div variants={fadeIn("right", "spring", 0.25 * index, 0.50)} className='w-full purple-cian-gradient p-[1px] rounded-[20px] shadow-card'>
             <div
                 className='bg-tertiary rounded-[20px] py-5 px-5 min-h-[130px] flex justify-evenly items-center flex-col'
             >

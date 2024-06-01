@@ -57,7 +57,7 @@ const Contact = () => {
             <span className='text-white font-medium mb-4'>{language ? texts['contactmessagept'] : texts['contactmessageen']}</span>
             <textarea rows={7} name='message' value={form.message} onChange={handleChange} placeholder={language ? texts['contactmessagephpt'] : texts['contactmessagephen']} className='bg-fourtiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' />
           </label>
-          <button className='bg-fourtiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl' type='submit' >{loading ? language ? texts['contactsendingpt'] : texts['contactsendingen'] : language ? texts['contactsendpt'] : texts['contactsenden']}
+          <button className='purple-cian-gradient py-3 px-8 outline-none w-fit text-white font-bold  shadow-card rounded-xl' type='submit' style={{textShadow:'1px 1px 1px black'}} >{loading ? language ? texts['contactsendingpt'] : texts['contactsendingen'] : language ? texts['contactsendpt'] : texts['contactsenden']}
 
           </button>
 

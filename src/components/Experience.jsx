@@ -1,6 +1,6 @@
 import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 
 import 'react-vertical-timeline-component/style.min.css';
 
@@ -15,7 +15,7 @@ const ExperienceCard = ({ experience }) => (<VerticalTimelineElement
   contentStyle={{ background: '#141414', color: '#fff' }}
   contentArrowStyle={{ borderRight: '7px solid #232631' }}
   date={experience.date}
-  iconStyle={{ background: experience.iconBg }}
+  iconStyle={{ background: experience.iconBg}}
   icon={<div className='flex justify-center items-center w-full h-full'>
     <img
       src={experience.icon}
@@ -23,8 +23,9 @@ const ExperienceCard = ({ experience }) => (<VerticalTimelineElement
       className='w-[60%] h-[60%] object-contain'
     />
   </div>}>
+    
   <div>
-    <h3 className='text-white text-[1.5rem] font-bold'>{experience.title}</h3>
+    <h3 className='purple-cian-text-gradient text-[1.5rem] font-bold'>{experience.title}</h3>
     <p className='text-secondary text-[1rem] font-semibold' style={{ margin: 0 }}>{experience.company_name}</p>
   </div>
   <ul className='mt-5 list-disc ml-5 space-y-2'>
