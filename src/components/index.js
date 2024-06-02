@@ -14,6 +14,5 @@ export {
   Experience,
   Works,
   Contact,
-
   StarsCanvas
 }

@@ -1,4 +1,7 @@
 import {
+  apollo,
+  nestjs,
+  nextjs,
   javascript,
   typescript,
   html,
@@ -199,11 +202,19 @@ const technologies = [
     name: 'XML',
     icon: xml
   },
+  {
+    name: 'Nest.Js', 
+    icon: nestjs
+  },
+  {
+    name: 'Next.Js', 
+    icon: nextjs
+  },
 ];
 
 const experiencespt = [
   {
-    title: "Desenvolvedor Mobile",
+    title: "Full Stack",
     company_name: "Sincroneasy",
     icon: sincroneasy,
     iconBg: "#F4A259",
@@ -219,7 +230,7 @@ const experiencespt = [
     title: "Desenvolvedor Salesforce",
     company_name: "MSERV TI",
     icon: mserv,
-    iconBg: "#2A628F",
+    iconBg: "#000000",
     date: "Maio 2023 - Hoje",
     points: [
       "Desenvolver e manter soluções Salesforce utilizando Apex e outras tecnologias relacionadas.",
@@ -228,7 +239,7 @@ const experiencespt = [
     ],
   },
   {
-    title: "Backend e QA",
+    title: "Full Stack",
     company_name: "SIEHP",
     icon: siehp,
     iconBg: "#AA20AC",
@@ -240,10 +251,23 @@ const experiencespt = [
       "Participar em testes e revisões de código como QA.",
     ],
   },
+  {
+    title: "Gerente de Projeto",
+    company_name: "Apollo Solves",
+    icon: apollo,
+    iconBg: "#181818",
+    date: "Abr 2024 - Hoje",
+    points: [
+      "Gerenciar projetos de desenvolvimento de software, garantindo que os prazos sejam cumpridos e que os produtos sejam de alta qualidade.",
+      "Colaborar com equipas multifuncionais, incluindo designers, gestores de produto e outros programadores, para criar produtos de alta qualidade.",
+      "Implementar um design reativo e garantir a compatibilidade entre browsers.",
+      "Participar em testes e revisões de código como QA.",
+    ], 
+  }
 ];
 const experiencesen = [
   {
-    title: "Mobile Developer",
+    title: "Full Stack",
     company_name: "Sincroneasy",
     icon: sincroneasy,
     iconBg: "#F4A259",
@@ -259,7 +283,7 @@ const experiencesen = [
     title: "Salesforce Developer",
     company_name: "MSERV TI",
     icon: mserv,
-    iconBg: "#2A628F",
+    iconBg: "#000000",
     date: "May 2023 - Today",
     points: [
       "Developing and maintaining Salesforce solutions using Apex and other related technologies.",
@@ -268,7 +292,7 @@ const experiencesen = [
     ],
   },
   {
-    title: "Backend and QA",
+    title: "Full Stack",
     company_name: "SIEHP",
     icon: siehp,
     iconBg: "#AA20AC",
@@ -280,6 +304,19 @@ const experiencesen = [
       "Participating in tests and code reviews as QA.",
     ],
   },
+  {
+    title: "Project Manager",
+    company_name: "Apollo Solves",
+    icon: apollo,
+    iconBg: "#181818",
+    date: "Apr 2024 - Today",
+    points: [
+      "Managing software development projects, ensuring deadlines are met and products are of high quality.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in tests and code reviews as QA.",
+    ],
+  }
 ];
 
 const projectsen = [

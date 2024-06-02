@@ -27,8 +27,6 @@ import sql from "./tech/sql.png";
 import sqlite from "./tech/sqlite.png";
 import trello from "./tech/trello.png";
 import xml from "./tech/xml.png";
-
-
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -41,10 +39,13 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import nestjs from "./tech/nestjs.png";
+import nextjs from "./tech/nextjs.png";
 
 import mserv from "./company/mserv.png";
 import sincroneasy from "./company/sincroneasy.png";
 import siehp from "./company/siehp.png";
+import apollo from "./company/apollo.png";
 
 import mtm from "./mtm.png";
 import voidmovies from "./voidmovies.png";
@@ -53,9 +54,14 @@ import ytdownloader from "./ytdownloader.png";
 import mktcodereader from "./marketcodereader.png";
 
 import perfil from "./perfil.png";
+import clouds from "./clouds.png";
 
 
 export {
+  apollo,
+  clouds,
+  nextjs,
+  nestjs,
   perfil,
   logo,
   to_source,
