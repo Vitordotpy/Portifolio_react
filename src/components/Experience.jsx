@@ -1,13 +1,11 @@
 import React from 'react'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { color, motion } from 'framer-motion';
 
 import 'react-vertical-timeline-component/style.min.css';
 
 import { styles } from '../styles';
 import { experiencesen, experiencespt } from '../constants';
 import { SectionWrapper } from '../hoc';
-import { textVariant } from '../utils/motion';
 import { useLanguage } from './context/LanguageContext';
 import { texts } from '../constants';
 
@@ -46,14 +44,12 @@ const Experience = () => {
   const {language} = useLanguage();
   return (
     <>
-      <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
           {language?texts['workheaderpt']:texts['workheaderen']}
         </p>
         <h2 className={styles.sectionHeadText}>
         {language?texts['workexppt']:texts['workexpen']}
         </h2>
-      </motion.div>
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
           { (language ? experiencespt: experiencesen).map((experience, index) => (
