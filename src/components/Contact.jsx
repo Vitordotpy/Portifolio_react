@@ -36,7 +36,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='xl:mt-12 xl:flex-row flex-col-reverse flex  overflow-hidden'>
       <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className='flex-[0.75] bg-tertiary p-8 rounded-2xl'>
         <p className={styles.sectionSubText}>
           {language ? texts['contactheaderpt'] : texts['contactheaderen']}
@@ -44,7 +44,7 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>
           {language ? texts['contactpt'] : texts['contacten']}
         </h3>
-        <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
+        <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col'>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>{language ? texts['contactnamept'] : texts['contactnameen']}</span>
             <input type='text' name='name' value={form.name} onChange={handleChange} placeholder={language ? texts['contactnamephpt'] : texts['contactnamephen']} className='bg-fourtiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' />
